@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url(Assets/bg-main-desktop.png);
+    background-repeat:no-repeat;
+
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    font-family:'Space Grotesk';
+}
+
+/*-------------------FRONT CARD--------------------*/
+
+#left{
+    margin-top:19%;
+}
+
+#front-card{
+    color:hsl(0, 0%, 100%);
+    background-image:url(Assets/bg-card-front.png);
+    background-repeat:no-repeat;
+    width:100%;
+    height:250px;
+    padding-top:20px;
+    padding-left:25px;
+    padding-right:30px;
+    margin-left:17%;
+    margin-bottom:30px;
+}
+    #front-card h2{
+        font-weight:500;
+        font-size:32px;
+        margin-top:55px;
+    }
+
+/*-------------------BACK CARD--------------------*/
+#back-card{
+    background-image:url(Assets/bg-card-back.png);
+    background-repeat:no-repeat;
+    width:100%;
+    height:250px;
+    margin-left:30%;
+}
+
+#informations-front{
+    display:flex;
+    max-width: 400px;
+    justify-content: space-between;
+    
+}
+    #informations-front p{
+        font-weight:300;
+        margin-top:30px;
+        
+    }
+
+#back-card {
+    padding-top:110px;
+    padding-left:41%;
+}   
+    #back-card h3{
+        color:white;
+        font-size:16px;
+        font-weight:300;
+    }
+    
+/*----------------RIGHT--------------------*/  
+
+#right{
+    margin-top:30%;
+    max-width:400px;
+    color:hsl(278, 68%, 11%);
+}
+
+label{
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+input{
+    margin-bottom:20px;
+}
+    input[type="text"]{
+        font-weight:700;
+        font-size:15px;
+        padding-left:15px;
+    }
+    input::placeholder{
+        font-family:'Space Grotesk';
+        font-weight:500;
+        font-size:15px;
+        
+        color:hsl(270, 3%, 87%);
+    }
+
+
+#inputs{
+    display:flex;
+    flex-direction:column;
+}
+#date{
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 1fr;
+}
+
+#month-year{
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 1fr;
+    margin-right:25px;
+}
+#cvc{
+    display:flex;
+    flex-direction:column;
+}
+
+.card-name{
+    width:400px;
+    height:40px;
+    border-radius:5.5px;
+    border:1px solid hsl(270, 3%, 87%);
+}
+.card-date{
+    width:100px;
+    height:40px;
+    margin-right:10px;
+    border-radius:5.5px;
+    border:1px solid hsl(270, 3%, 87%);
+}
+#codigo{
+    width: 120px;
+    height:40px;
+    border:1px solid hsl(270, 3%, 87%);
+    border-radius:5.5px;
+}
+
+#month-year{
+    margin-top:5px;
+}
+#button{
+    font-family:'Space Grotesk';
+    font-size:16px;
+    color:hsl(270, 3%, 87%);
+    width:420px;
+    height:50px;
+    border-radius:10px;
+    border:none;
+    background-color:hsl(278, 68%, 11%);
+    margin-top:20px;
+    cursor:pointer;
+}
+    #button:hover{
+        color:hsl(279, 6%, 55%);
+    }

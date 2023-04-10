@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="left">
+
+        <div id="front-card">
+            <img src="Assets/card-logo.svg" alt="">
+            <h2 id="cardNumber">0000 0000 0000 0000</h2>
+            <div id="informations-front">
+                <p id="cardName">FELICIA LEIRE</p>
+                <p><span id="CardDate">08</span><span>/</span><span id="CardYear">00</span></p>
+            </div>
+        </div>
+
+        <div id="back-card">
+            <h3 id="cardCode">000</h3>
+        </div>
+    </div>
+
+    <div id="right">
+        <form action="" id="inputs">
+            <label for="">CARDHOLDER NAME</label>
+            <input type="text" name="" id="name" placeholder="Felicia Leire" class="card-name">
+
+            <label for="">CARD NUMBER</label>
+            <input type="text" name="" id="numero" placeholder="0000 0000 0000 0000" class="card-name">
+
+            <div id="date">
+                <div>
+                    <label for="" id="exp">EXP. DATE (MM/YY)</label>
+                    <div id="month-year">
+                        <input type="text" name="" id="mes" placeholder="MM" class="card-date">
+                        <input type="text" name="" id="year" placeholder="YY" class="card-date">
+                    </div>
+                </div>
+
+                <div id="cvc">
+                    <label for="">CVC</label>
+                    <input type="text" name="" id="codigo" placeholder="123">
+                </div>
+            </div>
+            <button id="button">Confirm</button>
+        </form>
+    </div>
+
+
+    <script src="java.js"></script>
+</body>
+</html>
